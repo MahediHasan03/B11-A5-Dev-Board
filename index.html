@@ -35,7 +35,7 @@
     <title>Dev Board</title>
 </head>
 
-<body class="font-Poppins">
+<body id="body" class="font-Poppins pt-4">
    <header>
     <nav class="flex justify-between px-3 py-7 mx-20 mt-5 rounded-xl bg-gray-200 ">
         <div class="flex items-center gap-3">
@@ -48,7 +48,7 @@
             <p id="navNumber" class="font-bold text-3xl">23</p>
             </div>
             <div>
-                <img src="/assets/theme-btn.png" alt="">
+                <img id="bg-change" src="/assets/theme-btn.png" alt="">
             </div>
         </div>
     </nav>
@@ -72,8 +72,7 @@
             <div class="flex  gap-3 bg-slate-100 rounded-xl p-6">
                 <img src="/assets/calender.png" alt=""> 
                 <div class="flex gap-2">
-                    <p>Web</p>
-                    <h3>Jul 28, 2024</h3>
+                    <p id="date"></p>
                 </div>
             </div>
         </section>
@@ -219,7 +218,7 @@
             <h3 class="font-medium text-lg">Activity Log</h3>
            </div>
            <div>
-            <button class="btn text-white bg-blue-500 mx-auto">Clear History</button>
+            <button id="activity-log-btn" class="btn text-white bg-blue-500 mx-auto">Clear History</button>
            </div>
         </div>
         <div id="activity-box">

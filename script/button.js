@@ -1,5 +1,7 @@
 
 
+document.getElementById("date").innerText += new Date().toLocaleDateString();
+
 document.getElementById("button1").addEventListener("click", 
     function(){
         alert("Board Update Successfully");
@@ -212,3 +214,16 @@ document.getElementById("button6").addEventListener("click",
         this.disabled = true;
 
 })
+
+// Activity log
+document.getElementById("activity-log-btn").addEventListener("click", 
+    function(){
+    document.getElementById("activity-box").innerText =  "";
+
+})
+// Background Color
+document.getElementById("bg-change").addEventListener("click", 
+    function () {
+    let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+    document.getElementById("body").style.backgroundColor = randomColor;
+});
