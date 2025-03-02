@@ -1,11 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Daisy Ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary: '3752FD',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .font-Poppins{
+            font-family:"Poppins", sans-serif;
+        }
+    </style>
+
     <title>Dev Board</title>
 </head>
-<body>
-    
+
+<body class="font-Poppins">
+   <header>
+    <nav class="flex justify-between px-20 py-7 mx-20 mt-5 rounded-xl bg-gray-200 ">
+        <div class="flex items-center gap-3">
+            <img src="/assets/logo.png" alt="">
+            <h3 class="font-light text-3xl">Dev <span class="font-bold text-3xl">Board</span></h3>
+        </div>
+        <div class="flex gap-8 items-center">
+            <div class="flex gap-3">
+                <img src="/assets/checkbox.png" alt="">
+            <p class="font-bold text-3xl">23</p>
+            </div>
+            <div>
+                <img src="/assets/theme-btn.png" alt="">
+            </div>
+        </div>
+    </nav>
+   </header>
+   <main class="px-20 flex gap-5 pb-5 pt-5">
+    <section class="w-3/4 bg-gray-200 rounded-xl">
+        <section class="flex justify-between items-center p-3 border-b-2 border-dashed border-gray-300 w-full pb-4">
+            <div class="flex items-center gap-3 bg-slate-100 rounded-xl p-6">
+                <div class="">
+                    <img src="/assets/checkbox.png" alt="">
+                </div>
+                <div>
+                    <p>Task Assigned</p>
+                    <h3>05</h3>
+                </div>
+            </div>
+            <div class="bg-slate-100 flex items-center rounded-xl gap-5 p-3 w-3/6 bg-linear-to-r from-blue-600 to-blue-300">
+                <img src="/assets/board.png" alt="">
+                <h3>Discover Something <br> New Today!</h3>
+            </div>
+            <div class="flex  gap-3 bg-slate-100 rounded-xl p-6">
+                <img src="/assets/calender.png" alt=""> 
+                <div>
+                    <p>Web</p>
+                    <h3>Jul 28, 2024</h3>
+                </div>
+            </div>
+        </section>
+        <section class="grid grid-cols-3 gap-3 p-4">
+            <div class="p-5 bg-blue-50 rounded-xl">
+                <p class="p-3 bg-white rounded-xl py-2 w-fit">
+                    ShopEase
+                </p>
+                <h3 class="font-medium text-xl my-3">
+                    Fix Mobile Button Issue 
+                </h3>
+                <p class="bg-white p-3 rounded-xl my-4 text-base font-normal text-gray-600">
+                    Debug using Chrome DevTools, check for overlap...
+                </p>
+                <div class="flex items-center justify-between">
+                    <div class="gap-4">
+                        <p class="font-normal text-sm">
+                            Deadline
+                        </p>
+                        <h3 class="font-medium text-base">Jul 28, 2024</h3>
+                    </div>
+                    <div>
+                        <button class="btn bg-blue-500 text-white font-medium text-base">Completed</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 bg-blue-50 rounded-xl">
+                <p class="p-3 bg-white rounded-xl py-2 w-fit">
+                    ShopEase
+                </p>
+                <h3 class="font-medium text-xl my-3">
+                    Fix Mobile Button Issue 
+                </h3>
+                <p class="bg-white p-3 rounded-xl my-4 text-base font-normal text-gray-600">
+                    Debug using Chrome DevTools, check for overlap...
+                </p>
+                <div class="flex items-center justify-between">
+                    <div class="gap-4">
+                        <p class="font-normal text-sm">
+                            Deadline
+                        </p>
+                        <h3 class="font-medium text-base">Jul 28, 2024</h3>
+                    </div>
+                    <div>
+                        <button class="btn bg-blue-500 text-white font-medium text-base">Completed</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 bg-blue-50 rounded-xl">
+                <p class="p-3 bg-white rounded-xl py-2 w-fit">
+                    ShopEase
+                </p>
+                <h3 class="font-medium text-xl my-3">
+                    Fix Mobile Button Issue 
+                </h3>
+                <p class="bg-white p-3 rounded-xl my-4 text-base font-normal text-gray-600">
+                    Debug using Chrome DevTools, check for overlap...
+                </p>
+                <div class="flex items-center justify-between">
+                    <div class="gap-4">
+                        <p class="font-normal text-sm">
+                            Deadline
+                        </p>
+                        <h3 class="font-medium text-base">Jul 28, 2024</h3>
+                    </div>
+                    <div>
+                        <button class="btn bg-blue-500 text-white font-medium text-base">Completed</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 bg-blue-50 rounded-xl">
+                <p class="p-3 bg-white rounded-xl py-2 w-fit">
+                    ShopEase
+                </p>
+                <h3 class="font-medium text-xl my-3">
+                    Fix Mobile Button Issue 
+                </h3>
+                <p class="bg-white p-3 rounded-xl my-4 text-base font-normal text-gray-600">
+                    Debug using Chrome DevTools, check for overlap...
+                </p>
+                <div class="flex items-center justify-between">
+                    <div class="gap-4">
+                        <p class="font-normal text-sm">
+                            Deadline
+                        </p>
+                        <h3 class="font-medium text-base">Jul 28, 2024</h3>
+                    </div>
+                    <div>
+                        <button class="btn bg-blue-500 text-white font-medium text-base">Completed</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 bg-blue-50 rounded-xl">
+                <p class="p-3 bg-white rounded-xl py-2 w-fit">
+                    ShopEase
+                </p>
+                <h3 class="font-medium text-xl my-3">
+                    Fix Mobile Button Issue 
+                </h3>
+                <p class="bg-white p-3 rounded-xl my-4 text-base font-normal text-gray-600">
+                    Debug using Chrome DevTools, check for overlap...
+                </p>
+                <div class="flex items-center justify-between">
+                    <div class="gap-4">
+                        <p class="font-normal text-sm">
+                            Deadline
+                        </p>
+                        <h3 class="font-medium text-base">Jul 28, 2024</h3>
+                    </div>
+                    <div>
+                        <button class="btn bg-blue-500 text-white font-medium text-base">Completed</button>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 bg-blue-50 rounded-xl">
+                <p class="p-3 bg-white rounded-xl py-2 w-fit">
+                    ShopEase
+                </p>
+                <h3 class="font-medium text-xl my-3">
+                    Fix Mobile Button Issue 
+                </h3>
+                <p class="bg-white p-3 rounded-xl my-4 text-base font-normal text-gray-600">
+                    Debug using Chrome DevTools, check for overlap...
+                </p>
+                <div class="flex items-center justify-between">
+                    <div class="gap-4">
+                        <p class="font-normal text-sm">
+                            Deadline
+                        </p>
+                        <h3 class="font-medium text-base">Jul 28, 2024</h3>
+                    </div>
+                    <div>
+                        <button class="btn bg-blue-500 text-white font-medium text-base">Completed</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="p-8 bg-gray-200 rounded-xl">
+        <div class="grid gap-4 items-center justify-center border-b-2 border-dashed border-gray-300 w-full pb-5">
+           <div class="flex gap-3">
+            <img src="/assets/activity.png" alt="">
+            <h3>Activity Log</h3>
+           </div>
+           <div>
+            <button class="btn text-white bg-blue-500">Clear History</button>
+           </div>
+        </div>
+        <div>
+            <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+        </div>
+    </section>
+   </main>
+
 </body>
+
 </html>
