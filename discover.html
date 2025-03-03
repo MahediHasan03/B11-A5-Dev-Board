@@ -67,11 +67,10 @@
                 <p class="font-semibold text-xl p-3 border-b-1 border-dashed border-gray-400">Question-2: What is the
                     difference between innerHTML, innerText, and textContent ?</p>
                 <p class="p-4 font-normal text-base">
-                    We can use innerHTML, innerText, and textContent to get or change content inside an element, but
-                    they work differently. innerHTML reads or writes the entire HTML inside an element, meaning it can
-                    handle tags and render them. innerText only gets or sets the visible text inside an element,
-                    ignoring hidden content and extra spaces. textContent retrieves all text, including hidden elements,
-                    and keeps spacing as it is.
+                    InnerHTML, innerText, and textContent are used to get or change content inside an element, but they
+                    work differently. InnerHTML reads or writes the entire HTML inside an element, allowing tags to be
+                    rendered. InnerText only gets or sets the visible text, ignoring hidden content and extra spaces.
+                    TextContent retrieves all text, including hidden elements, while preserving spacing as it is.
                 </p>
             </div>
             <div class="bg-slate-100 mx-20 rounded-xl">
@@ -85,29 +84,26 @@
                 </p>
             </div>
             <div class="bg-slate-100 mx-20 rounded-xl">
-                <p class="font-semibold text-xl p-3 border-b-1 border-dashed border-gray-400">Question-1: What are the
-                    different ways to select an element in the DOM?</p>
+                <p class="font-semibold text-xl p-3 border-b-1 border-dashed border-gray-400">Question-4: What is event
+                    bubbling in the DOM?</p>
                 <p class="p-4 font-normal text-base">
-                    We can select elements in the DOM using different methods. getElementById is the quickest way to
-                    grab an element by its unique ID. If we need multiple elements, getElementsByClassName selects by
-                    class, and getElementsByTagName selects by tag name. For more flexibility, querySelector gets the
-                    first matching element using a CSS selector.
+                    Event bubbling happens when an event starts from the deepest element where it was triggered and
+                    moves up through its parent elements.
                 </p>
             </div>
             <div class="bg-slate-100 mx-20 rounded-xl">
-                <p class="font-semibold text-xl p-3 border-b-1 border-dashed border-gray-400">Question-1: What are the
-                    different ways to select an element in the DOM?</p>
+                <p class="font-semibold text-xl p-3 border-b-1 border-dashed border-gray-400">Question-5: How do you
+                    create, add, and remove elements using JavaScript?</p>
                 <p class="p-4 font-normal text-base">
-                    We can select elements in the DOM using different methods. getElementById is the quickest way to
-                    grab an element by its unique ID. If we need multiple elements, getElementsByClassName selects by
-                    class, and getElementsByTagName selects by tag name. For more flexibility, querySelector gets the
-                    first matching element using a CSS selector.
+                    Elements in the DOM are created using document.createElement(), which generates a new element that
+                    can be customized. To add it to the page, appendChild() places it inside a parent element, while
+                    append() allows adding multiple nodes or text at once. Removing an element is done using
+                    removeChild() when targeting a specific child inside a parent or remove(), which directly deletes
+                    the selected element from the DOM.
                 </p>
             </div>
         </section>
     </main>
-    <script src="script/discover.js"></script>
-    <script src="script/button.js"></script>
     <script src="script/discover-btn.js"></script>
 </body>
 
