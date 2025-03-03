@@ -1,11 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Daisy Ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary: '3752FD',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .font-Poppins {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+
+
     <title>Discover</title>
 </head>
-<body>
-    <h3>boom</h3>
+
+<body class="font-Poppins">
+    <header>
+        <nav class="flex justify-between px-3 py-7 mx-20 mt-5 rounded-xl bg-gray-200 ">
+            <div class="flex items-center gap-3">
+                <img src="assets/logo.png" alt="">
+                <h3 class="font-light text-3xl">Dev <span class="font-bold text-3xl">Board</span></h3>
+            </div>
+            <div>
+                <button id="discover-btn" class="text-white font-bold btn bg-blue-800 text-xl py-5">Back to Desk</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h3 class="font-bold text-center text-3xl py-4">Blogs</h3>
+        </section>
+        <section class="grid gap-3 pb-4">
+            <div class="bg-slate-100 mx-20 rounded-xl">
+                <p class="font-semibold text-xl p-3 border-b-1 border-dashed border-gray-400">Question-1: What are the
+                    different ways to select an element in the DOM?</p>
+                <p class="p-4 font-normal text-base">
+                    We can select elements in the DOM using different methods. getElementById is the quickest way to
+                    grab an element by its unique ID. If we need multiple elements, getElementsByClassName selects by
+                    class, and getElementsByTagName selects by tag name. For more flexibility, querySelector gets the
+                    first matching element using a CSS selector.
+                </p>
+            </div>
+            <div class="bg-slate-100 mx-20 rounded-xl">
+                <p class="font-semibold text-xl p-3 border-b-1 border-dashed border-gray-400">Question-2: What is the
+                    difference between innerHTML, innerText, and textContent ?</p>
+                <p class="p-4 font-normal text-base">
+                    We can use innerHTML, innerText, and textContent to get or change content inside an element, but
+                    they work differently. innerHTML reads or writes the entire HTML inside an element, meaning it can
+                    handle tags and render them. innerText only gets or sets the visible text inside an element,
+                    ignoring hidden content and extra spaces. textContent retrieves all text, including hidden elements,
+                    and keeps spacing as it is.
+                </p>
+            </div>
+            <div class="bg-slate-100 mx-20 rounded-xl">
+                <p class="font-semibold text-xl p-3 border-b-1 border-dashed border-gray-400">Question-3: What is event delegation in the DOM?</p>
+                <p class="p-4 font-normal text-base">
+                    We can select elements in the DOM using different methods. getElementById is the quickest way to
+                    grab an element by its unique ID. If we need multiple elements, getElementsByClassName selects by
+                    class, and getElementsByTagName selects by tag name. For more flexibility, querySelector gets the
+                    first matching element using a CSS selector.
+                </p>
+            </div>
+            <div class="bg-slate-100 mx-20 rounded-xl">
+                <p class="font-semibold text-xl p-3 border-b-1 border-dashed border-gray-400">Question-1: What are the
+                    different ways to select an element in the DOM?</p>
+                <p class="p-4 font-normal text-base">
+                    We can select elements in the DOM using different methods. getElementById is the quickest way to
+                    grab an element by its unique ID. If we need multiple elements, getElementsByClassName selects by
+                    class, and getElementsByTagName selects by tag name. For more flexibility, querySelector gets the
+                    first matching element using a CSS selector.
+                </p>
+            </div>
+            <div class="bg-slate-100 mx-20 rounded-xl">
+                <p class="font-semibold text-xl p-3 border-b-1 border-dashed border-gray-400">Question-1: What are the
+                    different ways to select an element in the DOM?</p>
+                <p class="p-4 font-normal text-base">
+                    We can select elements in the DOM using different methods. getElementById is the quickest way to
+                    grab an element by its unique ID. If we need multiple elements, getElementsByClassName selects by
+                    class, and getElementsByTagName selects by tag name. For more flexibility, querySelector gets the
+                    first matching element using a CSS selector.
+                </p>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
